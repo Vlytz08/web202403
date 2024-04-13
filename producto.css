@@ -70,6 +70,40 @@ nav{
     flex-wrap: wrap;
 }
 
+.Producto__juego {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+/* padding-top: 30px; */
+width: 300px;
+height: 460px;
+text-align: center  ;
+}
+
+.Producto__juego > img {
+width: 170px;
+height: 270px;
+}
+
+.Producto__juego-info {
+margin-top: 10px;
+padding: 10px;
+text-align: center;
+}
+
+button {
+margin-top: 10px;
+}
+
+/* Estilo boton productos */
+button{
+border: none; 
+color: black; 
+padding: 14px 28px; 
+cursor: pointer; 
+border-radius: 5px; 
+background-color: white; border: 2px solid #007bff
+}
+ button:hover{background: #0b7dda; color: white;}
+
 .buscar button{
   border-radius: 50px; 
 

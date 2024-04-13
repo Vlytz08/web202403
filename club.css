@@ -1,15 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Tac+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
-
-
+a{
+    text-decoration: none;
+}
+/* nav */
 *{ 
     margin: 0;
-}
-a{
-    text-decoration: none; 
-}
-a:visited {
-    color: #0a1a2a; 
 }
 
 .nombre{
@@ -30,150 +26,18 @@ nav{
     box-shadow: rgba(0, 58, 250, 0.4) 0px 5px, rgba(0, 58, 250, 0.3) 0px 10px, rgba(0, 58, 250, 0.2) 0px 15px;
     font-family:  "Jersey 15", sans-serif;
     font-size: 20px;
-
-
 }
 .nav> a {
     color: #f1f1f1;
 }
-
-
-
-
-section {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  background-color: aliceblue;
-}
-
-.titulo {
-  text-align: center;
-  font-size: 40px;
-  padding-top: 50px;
-}
-
-.carrusel {
-  width: 800px;
-  height: auto;
-  margin: 50px auto 0;
-  overflow: hidden;
-}
-
-.carrusel ul {
-  display: flex;
-  padding: 0;
-  width: 400%;
-  animation: slide 10s infinite alternate ease-in-out;
-}
-
-.carrusel li {
-  width: 100%;
-  list-style: none;
-  position: relative;
-}
-
-.carrusel img {
-  width: 100%;
-}
-
-@keyframes slide {
-  0% {margin-left: 0; }
-  20% {margin-left: 0; }
-
-  25% {margin-left: -100%; }
-  45% {margin-left: -100%; }
-
-  50% {margin-left: -200%; }
-  70% {margin-left: -200%; }
-
-  75% {margin-left: -300%; }
-  100% {margin-left: -300%; }
-}
-
-@media(max-width:991px) {
-  body {
-      padding: 30px;
-  }
-
-  .carrusel {
-      width: 100%;
-  }
-}
-
-.carrusel{
-  border: 1px black solid;
-  height: 460px;
-  width: 1400px;
-  display: flex;
-  /* flex-wrap: wrap; */
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.Producto__juego {
-border: 1px black solid;
-padding: 20px;
-width: 300px;
-height: auto;
-text-align: center;
-}
-
-.Producto__juego > img {
-width: 200px;
-height: 300px;
-}
-
-.Producto__juego-info {
-margin-top: 10px;
-padding: 10px;
-text-align: center;
-}
-
-button {
-margin-top: 10px;
-}
-
-/* Estilo boton productos */
-.Producto__juego > button{
-border: none; 
-color: black; 
-padding: 14px 28px; 
-cursor: pointer; 
-border-radius: 5px; 
-background-color: white; border: 2px solid #007bff
-}
-.Producto__juego > button:hover{background: #0b7dda; color: white;}
-
-
-
-
-
-
 /* Hugo:::::Pie de Pagina*/
+
 
 .pie-pagina {
     background-color: rgb(225, 8, 233);
-  
     background: linear-gradient(to right, #e02121, #003afa);
     margin-top: auto;
     color: white;
-    padding-top: 10px;
   }
 
   .pie-pagina .grupo-1 {
@@ -184,6 +48,7 @@ background-color: white; border: 2px solid #007bff
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 50px;
     padding: 5px 0px;
+    
   }
   .pie-pagina .grupo-1 .boxPiePaguina1 figure {
     height: 100%; /*Posicion imagen*/
@@ -216,8 +81,73 @@ background-color: white; border: 2px solid #007bff
     text-align: center;
     color: #fff;
   }
-
 small {
     font-size: 15px; /*Ultimo cuadro tamaño letra*/
   }
+
+
+
+  
+  
+article{
+    padding: 10vh;
+    width: 1100px;
+    height: 480px;
+    display: flex;
+    justify-content: center;
+}
+.Producto{
+    width: 1000px;
+    height: 500px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+  .Producto__juego {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+/* padding-top: 30px; */
+width: 300px;
+height: 460px;
+text-align: center  ;
+}
+
+.Producto__juego > img {
+width: 170px;
+height: 270px;
+}
+
+.Producto__juego-info {
+margin-top: 10px;
+padding: 10px;
+text-align: center;
+}
+
+button {
+margin-top: 10px;
+}
+
+.compraaaa{
+    display: flex;
+    flex-direction: column  ;
+    justify-content: center;
+}
+.compraaaa button{
+    background-color: #E3A44D
+}
+.compraaaa h1{
+    font-size: 50px;
+}
+/* Estilo boton productos */
+button{
+border: none; 
+color: black; 
+padding: 14px 28px; 
+cursor: pointer; 
+border-radius: 5px; 
+background-color: white; border: 2px solid #007bff
+}
+ button:hover{background: #0b7dda; color: white;}
 

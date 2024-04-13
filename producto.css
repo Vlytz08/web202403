@@ -1,13 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Tac+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
 
+/* Pagina */
+
+a{
+    text-decoration: none;}
+/* nav */
+
 
 *{ 
     margin: 0;
 }
-a{
-    text-decoration: none; 
-}
+
 a:visited {
     color: #0a1a2a; 
 }
@@ -30,138 +34,46 @@ nav{
     box-shadow: rgba(0, 58, 250, 0.4) 0px 5px, rgba(0, 58, 250, 0.3) 0px 10px, rgba(0, 58, 250, 0.2) 0px 15px;
     font-family:  "Jersey 15", sans-serif;
     font-size: 20px;
-
-
 }
 .nav> a {
     color: #f1f1f1;
 }
-
-
-
-
-section {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  background-color: aliceblue;
-}
-
-.titulo {
-  text-align: center;
-  font-size: 40px;
-  padding-top: 50px;
-}
-
-.carrusel {
-  width: 800px;
-  height: auto;
-  margin: 50px auto 0;
-  overflow: hidden;
-}
-
-.carrusel ul {
+.buscar{
   display: flex;
-  padding: 0;
-  width: 400%;
-  animation: slide 10s infinite alternate ease-in-out;
+  justify-content: center;
+  padding: 5vh;
 }
-
-.carrusel li {
-  width: 100%;
-  list-style: none;
-  position: relative;
-}
-
-.carrusel img {
-  width: 100%;
-}
-
-@keyframes slide {
-  0% {margin-left: 0; }
-  20% {margin-left: 0; }
-
-  25% {margin-left: -100%; }
-  45% {margin-left: -100%; }
-
-  50% {margin-left: -200%; }
-  70% {margin-left: -200%; }
-
-  75% {margin-left: -300%; }
-  100% {margin-left: -300%; }
-}
-
-@media(max-width:991px) {
-  body {
-      padding: 30px;
-  }
-
-  .carrusel {
-      width: 100%;
-  }
-}
-
-.carrusel{
-  border: 1px black solid;
-  height: 460px;
-  width: 1400px;
-  display: flex;
-  /* flex-wrap: wrap; */
+.buscar input{
+  width: 400px;
+  height: 40px;
+  box-shadow: rgba(77, 79, 88, 0.56) 0px 8px 70px 4px;
 }
 
 
 
+.Producto-contenedor{
+    
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px ;
+    
+}
+.Producto {
 
-
-
-
-
-
-
-
-
-
-
-
-.Producto__juego {
-border: 1px black solid;
-padding: 20px;
-width: 300px;
-height: auto;
-text-align: center;
+    width: 1400px;
+    height: 1000px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
 }
 
-.Producto__juego > img {
-width: 200px;
-height: 300px;
+.buscar button{
+  border-radius: 50px; 
+
 }
-
-.Producto__juego-info {
-margin-top: 10px;
-padding: 10px;
-text-align: center;
-}
-
-button {
-margin-top: 10px;
-}
-
-/* Estilo boton productos */
-.Producto__juego > button{
-border: none; 
-color: black; 
-padding: 14px 28px; 
-cursor: pointer; 
-border-radius: 5px; 
-background-color: white; border: 2px solid #007bff
-}
-.Producto__juego > button:hover{background: #0b7dda; color: white;}
-
-
-
 
 
 

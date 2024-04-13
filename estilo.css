@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Tac+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
 
-
+body{
+  display: flex;
+  row-gap: 5vh;
+  flex-direction: column;
+}
 *{ 
     margin: 0;
 }
@@ -112,8 +116,40 @@ body {
   /* flex-wrap: wrap; */
 }
 
+.nose{
+  
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 25px;
+    background-color: #90A2F2;
+    background-image: url('https://static.wikia.nocookie.net/featteca/images/3/37/Invencible.png/revision/latest?cb=20240301203959&path-prefix=es');
+    background-repeat: no-repeat;
+    background-size: 40vh;
+    background-position: 10% center ;
+    /* background-blend-mode:overlay ; */
+    font-size: 30px;
+    text-align: center;
+    
 
+}
+.nose h1{
+  font-family:  "Tac One", sans-serif;
+  font-size: 100px;}
 
+  .nose button{
+    border: none; 
+color: black; 
+padding: 14px 28px; 
+cursor: pointer; 
+border-radius: 50px; 
+background-color: white; border: 2px solid #007bff
+}
+.nose > button:hover{background: #E3A44D; color: white;}
+
+  
 
 
 

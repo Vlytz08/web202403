@@ -1,0 +1,145 @@
+.interfaz-registro{
+    display: flex;
+    justify-content: center;
+}
+
+.foto-user img {
+    height: 530px;
+    margin: 20px 0;
+    border-radius: 10px 0 0 10px;
+
+}
+
+
+
+.sesion-artcl {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    font-family: "Black Ops One", sistema-ui;
+    color: #FFFFFF;
+
+}
+.formulario__registro {
+    background-color: #8C64C2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    width: 410px;
+    height: 530px;
+    border-radius: 0 10px 10px 0;
+    text-align: center;
+    gap: 1rem;
+
+}
+
+.formulario__registro h3{ 
+    font-size: 2rem;
+}
+
+.formulario__registro input {
+    border: none;
+    border-bottom: 0.5px #090909 solid;
+    background: transparent;
+    outline: none;
+    width: 310px;
+    height: 40px;
+    font-size: 18px;
+    color: #FFFFFF;
+    margin: 0 20px;
+
+}
+.formulario__registro input:focus {
+    color: #090909;
+    border: none;
+    border-bottom: 2px #45CFDD solid;
+    background: transparent;
+    outline: none
+}
+.formulario__registro input::placeholder {
+    color: #FFFFFF;
+}
+
+.btn-field{
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.btn-field button{
+    border: 1px #6D1AE5 solid;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 50px;
+    background-color: #6D1AE5;
+    font-size: 17px;
+}
+.btn-field button:hover{
+    border: 1px #9355EE solid;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 50px;
+    background-color: #1D0242;
+    font-size: 17px;
+}
+
+.btn-field a{
+    color: #FFFFFF;
+}
+.btn-field a:link{
+    color: #FFFFFF;
+}
+
+.mensaje-error {
+    color: red solid;
+    transform: translateY(-25%);
+}
+
+.user-preg {
+    font-size: 0.9rem;
+    text-decoration: none
+}
+
+.user-preg a{
+    color: #1B19BD;
+}
+.user-preg a:hover{
+    color: #4846E6;
+}
+
+.box-sesion h3{
+    font-size: 2rem;
+}
+
+
+/* ------------------------------------- */
+
+
+
+@media screen and (max-width: 710px) {
+
+    .foto-user img {
+    height: 0px;
+    height: 0;
+    margin:  0;
+}
+
+.sesion-artcl form {
+    background: #8C64C2;
+    width: 400px;
+    height: 530px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px ;
+    border-radius: 10px;
+
+}
+
+}

@@ -1,0 +1,71 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block head%}
+<script src="{% static 'responsive.js' %}"></script>
+<script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+{% endblock %}
+
+{% block content %}
+
+  <section class="interfaz-soon">
+    <article class="cards-soon">
+      <div class="soon-card">
+        <img src="{% static 'Soon/Grand Theft Auto VI/GTA 6 Sistem Gereksinimleri Nelerdir_.jfif' %}" alt="...">
+        <P>
+          Grand Theft Auto VI pone rumbo al estado de Leonida, hogar de las calles
+          rebosantes de neones de Vice City y sus alrededores, en la evolución más
+          grande e inmersiva de la serie Grand Theft Auto hasta la fecha.
+        </P>
+        <b>Disponible en 2025 para PlayStation®5 y Xbox Series X|S. </b>
+        <button> <a href="https://www.rockstargames.com/es/VI" target="_blank">
+            Más informacion.
+          </a></button>
+      </div>
+      <div class="soon-card">
+        <img src="{% static 'Soon/Blade/Promocional.jpg' %}" alt="...">
+        <P>
+          Eric Brooks es el legendario Daywalker, mitad hombre, mitad vampiro
+          dividido entre la cálida sociedad de los vivos y el poder vertiginoso
+          de los no-muertos.
+          De Bethesda y Arkane Lyon, Marvel's Blade es un juego maduro en tercera
+          persona para un jugador ambientado en el corazón de París, ahora en
+          desarrollo en colaboración con Marvel Games.
+        </P>
+        <div class="soon-buttons">        
+          <button>
+            <a href="https://www.marvel.com/games/marvels-blade" target="_blank">Más informacion.</a>
+          </button>
+          <button>
+            <a href="https://www.youtube.com/watch?v=Fo7i73l52i8" target="_blank">Ver trailer.</a>
+          </button>
+        </div>
+      </div>
+      <div class="soon-card">
+        <img src="{% static 'Soon/Wolverine/Promocional.jpg'  %}" alt="...">
+        <P>
+          Marvel's Wolverine se encuentra actualmente en desarrollo para la consola PlayStation®5. Creado en
+          colaboración con PlayStation y Marvel Games. <br>El desarrollo estara a cargo de la reconocida desarrolladora <b>Insomniac Games</b>.
+        </P>
+
+
+        <button> <a href="https://insomniac.games/game/marvels-wolverine/" target="_blank">
+            Más informacion.
+          </a></button>
+      </div>
+      <div class="soon-card">
+        <img src="{% static 'Soon/Stellar Blade/Promocional.jpg' %}" alt="...">
+        <P>
+          Desde la Colonia, EVE, la integrante del Escuadrón Aéreo VII, llega a nuestro desolado planeta con una misión:
+          salvar a la humanidad y recuperar la Tierra de las garras de los Naytibas, la fuerza malévola que ha arrasado
+          con todo.
+        </P>
+        <b>Disponible el 26 de Abril del 2024 para PlayStation®5. </b>
+
+        <button> <a href="https://www.playstation.com/es-cl/games/stellar-blade/" target="_blank">
+            Más informacion.
+          </a></button>
+      </div>
+    </article>
+  </section>
+{% endblock %}

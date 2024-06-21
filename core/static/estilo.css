@@ -1,0 +1,680 @@
+@import url('https://fonts.googleapis.com/css2?family=Tac+One&display=swap');
+/* font-family:  "Tac One", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+/* font-family: "Fjalla One", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+/* font-family: "Raleway", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Fjalla+One&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+/* font-family: "Black Ops One", sistema-ui; */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    row-gap: 3vh;
+    flex-direction: column;
+    background-color: #E6FFFF;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Style Header -----------------------------------------------------------------------------------------*/
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-bottom: 1.5rem;
+    padding-top: 1rem;
+    color: #f1f1f1;
+    background-color: #1D0242;
+}
+
+header h1 {
+    font-size: 4rem;
+    font-family: "Tac One", sans-serif;
+    color: #f1f1f1;
+    text-shadow: 0 0 3px #FAF6F0;
+}
+
+header a:visited {
+    color: #f1f1f1;
+}
+
+.nav a:hover {
+    color: #6C00FF;
+}
+
+h1 a:hover {
+    text-shadow: 0 5px 5px #45CFDD;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 2.5rem;
+    font-size: 1.3rem;
+    font-family: "Fjalla One", sans-serif;
+}
+
+.ic {
+    transform: scale(2);
+}
+
+/* Style Footer -----------------------------------------------------------------------------------------*/
+
+footer {
+    background-color: #1D0242;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #f1f1f1;
+    height: 270px;
+}
+
+.pie {
+    height: 230px;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #f1f1f1;
+}
+
+#pie {
+    border-bottom: 3px #45CFDD solid;
+}
+
+.pie h3 {
+    border-top: 3px #45CFDD solid;
+    padding-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: "Fjalla One", sans-serif;
+    gap: 1rem;
+    width: 250px;
+    height: 80%;
+}
+
+.icon {
+    height: 200px;
+}
+
+.social a {
+    padding: 12px;
+
+}
+
+footer a:visited {
+    color: #f1f1f1;
+}
+
+.social a:hover {
+    color: #6C00FF;
+}
+
+/* Style Inicio html -----------------------------------------------------------------------------------*/
+.Interfaz {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 3vh;
+
+}
+
+/* Style Carrusel Index---------------------------------------------------------------------------------*/
+.contenedor-carrusel {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+
+}
+
+.carrusel {
+    width: 1050px;
+    height: auto;
+    overflow: hidden;
+
+}
+
+.carrusel ul {
+    display: flex;
+    width: 400%;
+    padding: 0;
+    animation: slide 18s infinite alternate ease-in-out;
+}
+
+.carrusel li {
+    width: 100%;
+    list-style: none;
+    position: relative;
+}
+
+.carrusel li img {
+    width: 100%;
+}
+
+.texto-carrusel {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    text-align: start;
+    padding: 0 50px;
+    top: 350px;
+    gap: 3rem;
+    color: #f1f1f1;
+    font-size: 3rem;
+    font-family: "Black Ops One", sistema-ui;
+}
+
+.texto-carrusel-2 {
+    position: absolute;
+    text-align: start;
+    padding: 0 50px;
+    top: 410px;
+    color: #f1f1f1;
+    font-size: 3rem;
+    font-family: "Black Ops One", sistema-ui;
+    text-shadow: 0 0 3px #090909;
+}
+
+@keyframes slide {
+    0% {
+        margin-left: 0;
+    }
+
+    20% {
+        margin-left: 0;
+    }
+
+    25% {
+        margin-left: -100%;
+    }
+
+    45% {
+        margin-left: -100%;
+    }
+
+    50% {
+        margin-left: -200%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    75% {
+        margin-left: -300%;
+    }
+
+    100% {
+        margin-left: -300%;
+    }
+
+}
+
+.texto-carrusel button {
+    border: 1px #F9B141 solid;
+    color: #FFFFFF;
+    padding: 14px 24px;
+    cursor: pointer;
+    border-radius: 50px;
+    background-color: #F9B141;
+    font-size: 20px;
+}
+
+/* Style preview Producto ------------------------------------------------------------------------------*/
+.contenedor-producto {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    background-color: #FFFFFF;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+
+}
+
+.description-contenedor {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+
+}
+
+.description-contenedor h3 {
+    font-family: "Tac One", sans-serif;
+    font-size: 3.5rem;
+    color: #090909;
+    text-shadow: 0 4px 4px grey;
+}
+
+.description-contenedor button {
+    border: 1px #6D1AE5 solid;
+    color: #FFFFFF;
+    padding: 14px 24px;
+    cursor: pointer;
+    border-radius: 50px;
+    background-color: #6C00FF;
+    font-size: 20px;
+}
+
+.description-contenedor button:hover {
+    border: 3px #6C00FF solid;
+    color: #FFFFFF;
+    padding: 14px 24px;
+    cursor: pointer;
+    border-radius: 50px;
+    background-color: #6C00FF;
+    font-size: 20px;
+    box-shadow: 6px 6px #1D0242;
+}
+.description-contenedor button a:visited {
+    color: #FFFFFF;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.card {
+    width: 215px;
+    height: 380px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-family: "Fjalla One", sans-serif;
+}
+
+.card-box {
+    width: 189px;
+    gap: 0.5rem;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap
+}
+
+.card img {
+    width: 199px;
+    height: auto;
+}
+
+.description {
+    height: 65px;
+    color: #090909;
+}
+
+.precio {
+    height: 39px;
+    font-size: 1.4rem;
+    color: #6D1AE5;
+}
+
+/* Style About Us Index---------------------------------------------------------------------------------*/
+.contenedor-about {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    align-items: center;
+    width: 65%;
+    background-color: #FFFFFF;
+    height: 760px;
+}
+
+.about-img img {
+    width: 400px;
+    height: 710px;
+}
+
+.about-txt {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    row-gap: 1.2rem;
+    width: 30%;
+    height: 650px;
+    font-family: "Black Ops One", sistema-ui;
+
+
+}
+
+.about-txt h3 {
+
+    font-size: 30px;
+    padding-left: 10px;
+
+
+}
+
+.about-txt h4 {
+    border-left: 5px #6C00FF solid;
+    font-size: 25px;
+    padding-left: 10px;
+}
+
+.about-txt h4 b {
+    color: #F9B141;
+}
+
+
+
+/* Style Productos html -------------------------------------------------------------------------------*/
+
+.producto-base {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tipo-moneda-p {
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.productos-view {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    width: 80%;
+    height: 850px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+    align-content: space-evenly;
+    justify-content: space-around;
+}
+
+.paginas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 300px;
+    font-family: "Fjalla One", sans-serif;
+    font-size: 1.2rem;
+}
+
+.paginas label {
+    border-top: 4px #45CFDD solid;
+    padding: 8px;
+}
+
+/* Style Carrito html -------------------------------------------------------------------------------*/
+
+.interfaz-carro {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.carro {
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    width: 45%;
+    height: 400px;
+}
+
+
+.tipo-moneda select {
+    border-radius: 50px;
+    height: 30px;
+    width: 80px;
+    text-align: center;
+}
+
+.compra-artc {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    height: 150px;
+    background-color: #FFFFFF;
+}
+
+.compra-artc img {
+    width: 7rem;
+    height: 138px;
+
+
+}
+
+.compra-artc input {
+    border-radius: 50px;
+    height: 30px;
+    width: 80px;
+    text-align: center;
+}
+
+.pago {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: #FFFFFF;
+    width: 20%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.pago button {
+    border: 1px #6D1AE5 solid;
+    color: #FFFFFF;
+    padding: 14px 24px;
+    cursor: pointer;
+    border-radius: 50px;
+    background-color: #6C00FF;
+    font-size: 20px;
+}
+
+.pago button:hover {
+    border: 3px #45CFDD solid;
+    color: #FFFFFF;
+    padding: 14px 24px;
+    cursor: pointer;
+    border-radius: 50px;
+    background-color: #45CFDD;
+    font-size: 20px;
+    box-shadow: 6px 6px #1D0242;
+}
+
+.pago h3 {
+    padding: 10px;
+    font-size: x-large;
+}
+
+/* Style Juegos html -------------------------------------------------------------------------------*/
+.interfaz-juego {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.compra-juego {
+    width: 45%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    height: 440px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.compra-juego img {
+    width: 42%;
+}
+
+.compra-juego-info{
+    width:  45% ;
+    height: 95%;
+    border-left: 1px grey solid;
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+    font-family: "Black Ops One", sistema-ui;
+    padding: 20px 0 0 20px ;
+    row-gap: 1.5rem;
+}
+.compra-juego-info input{
+    border-radius: 50px;
+    height: 30px;
+    width: 80px;
+    text-align: center;
+}
+.compra-juego-info h3{
+    font-family: "Black Ops One", sistema-ui;
+    text-align: left;
+    font-size: 2rem;
+
+}
+.compra-juego-info h4{
+    font-size: 1.3rem;
+  
+}
+.cantidad-juego{display: flex;
+gap: 1rem;}
+.compra-juego-info button{
+    border: 1px #6D1AE5 solid;
+    color: #FFFFFF;
+    padding: 14px 24px;
+    cursor: pointer;
+    border-radius: 50px;
+    background-color: #6C00FF;
+    font-size: 20px;
+}
+/* Style soon html -------------------------------------------------------------------------------*/
+
+.interfaz-soon{
+    display: flex;
+    
+    justify-content: space-around;
+}
+.cards-soon{
+    width: 100%;
+    display: flex;
+    
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.soon-card{
+    background-color: #FFFFFF;
+    width: 390px;
+    height: 460px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    row-gap: 1.5rem;
+    text-align: center;
+    padding-top: 20px;
+    margin: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+}
+.soon-card img{
+    width: 320px;
+}
+.soon-card p {
+    margin: 0  5px 0 5px;
+}
+.soon-card  {
+     button {
+        border: 1px #6D1AE5 solid;
+        color: #FFFFFF;
+        padding: 14px 24px;
+        cursor: pointer;
+        border-radius: 50px;
+        background-color: #6C00FF;
+        font-size: 15px;
+    }
+    
+     button:hover {
+        border: 3px #45CFDD solid;
+        color: #FFFFFF;
+        padding: 14px 24px;
+        cursor: pointer;
+        border-radius: 50px;
+        background-color: #45CFDD;
+        font-size: 15px;
+        box-shadow: 6px 6px #1D0242;
+    }
+}
+
+.soon-buttons{
+    display: flex;
+    gap: 1rem;
+}
+
+/* ----------------------------------------------------------- */
+.abrir-menu,
+.cerrar-menu {
+    display: none;
+}
+
+@media screen and (max-width: 850px) {
+    .abrir-menu,
+    .cerrar-menu {
+        display: block;
+        border: 0;
+        font-size: 1.25rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .abrir-menu {
+        color: #FFFFFF;
+    }
+
+    .cerrar-menu {
+        color: #ececec;
+    }
+
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #1c1c1c;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+        z-index: 1;
+    }
+    
+    .nav-list {
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .nav-list li a {
+        color: #ecececec;
+    }
+}

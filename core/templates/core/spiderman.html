@@ -1,0 +1,48 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block head%}
+<script src="{% static 'responsive.js' %}"></script>
+{% endblock %}
+
+{% block content %}
+
+<section class="interfaz-juego">
+  <article class="compra-juego">
+    <img src="{% static 'Juegos/Spider-man 2/caratula-ps5.jpg' %}" alt>
+    <div class="compra-juego-info">
+      <h3> Marvel's <br> Spider-man 2</h3>
+      <h4> PS5</h4>
+      <h4>$69000</h4>
+      <div class="cantidad-juego">
+        <h4>Cantidad :</h4>
+        <input type="number" name="tentacles" min="1" max="10" value="1" />
+      </div>
+      <button>Agregar al carrito.</button>
+    </div>
+  </article>
+  <article class="contenedor-carrusel">
+    <div class="carrusel">
+      <ul>
+        <li>
+          <img src="{% static 'Juegos/Spider-man 2/Banner-2.webp' %}" alt="...">
+
+        </li>
+        <li>
+          <img src="{% static 'Juegos/Spider-man 2/Banner-3.webp' %}" alt="...">
+
+        </li>
+        <li>
+          <img src="{%static 'Juegos/Spider-man 2/Banner-4.webp' %}" alt="...">
+
+        </li>
+        <li>
+          <img src="{% static 'Juegos/Spider-man 2/Banner-1.webp' %}" alt="...">
+
+        </li>
+      </ul>
+    </div>
+  </article>
+
+</section>
+{% endblock %}

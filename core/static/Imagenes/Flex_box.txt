@@ -1,0 +1,43 @@
+<a href=" referencia " target "_blank"> nombre visible </a> 
+
+referencia->
+
+pagina externa                  Https//:google.com
+capeta local   			carpeta/nuevo.html
+	       			../volvercarpeta.html
+abrir en pestaña aparte 	target "_blank"
+		
+Estructura a nivel semantico
+<body>
+    <header>
+        <nav>
+
+        </nav>
+    </header>
+    <article>
+        <section>
+
+        </section>
+    </article>
+    <aside>
+        
+    </aside>
+    <footer>
+
+    </footer> 
+</body>
+
+
+FlexBox
+    justify-content: Horizontal ; 
+    /*cuando es una columna se intecambian los valores*/
+    align-items: Verticalmente 1 linea;
+    align-self: verticalmente uso individual;
+    align-content: verticalmente en multi linea;
+    
+    flex-direction: direccion elementos;
+    flex-wrap: distribuye;
+    flex-flow: combina los atributos de direction y wrap con un espacio ej flex-flow: row nowrap;
+
+
+cntrl + } = comenta la linea 

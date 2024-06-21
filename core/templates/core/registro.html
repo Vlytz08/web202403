@@ -1,0 +1,43 @@
+
+
+  {% extends 'core/base.html' %}
+{% load static %}
+
+{% block head%}
+<link rel="stylesheet" href="{% static 'reg.css' %}">
+{% endblock %}
+
+{% block content %}
+
+
+
+
+  <section class="interfaz-registro">
+    <article class="sesion-artcl">
+      <div class="foto-user">
+        <img src="{% static 'Imagenes/7he R4.gif' %}" alt="">
+      </div>
+      <form action="" class="formulario__registro">
+        <h3>Registro.</h3>
+        <input type="text" id="nombreInput" placeholder="Nombre y Apellido">
+        <p class="mensaje-error" id="mensajeNombre"></p>
+        <input type="text" id="correoInput" placeholder="Correo">
+        <p class="mensaje-error" id="mensajeCorreo"></p>
+        <input type="password" id="contrasenaInput" placeholder="Contraseña">
+        <p class="mensaje-error" id="mensajeContrasena"></p>
+        <input type="password" id="confirmarContrasenaInput" placeholder="Confirmar Contraseña">
+        <p class="mensaje-error" id="mensajeConfirmarContrasena"></p>
+        <div class="btn-field">
+          <button id="registrar" class="button">Registrarse</button>
+          <button id="mostrarContrasenas" class="button">Mostrar Contraseñas</button>
+        </div>
+        <div class="user-preg">
+          <label for=""> ¿Ya tienes una cuenta?</label>
+          <a href="{% url 'user' %}">Iniciar Sesión.</a>
+        </div>
+      </form>
+    </article>
+    
+  </section>
+
+{% endblock %}

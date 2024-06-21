@@ -1,0 +1,123 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block head%}
+<script src="{% static 'responsive.js' %}"></script>
+{% endblock %}
+
+{% block content %}
+
+<section class="Interfaz">
+  <article class="contenedor-producto">
+    <div class="description-contenedor">
+      <h3>Productos</h3>
+      <button><a href="producto.html">Ver todos.</a></button>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <a href="{% url 'spiderman' %}">
+          <img src="{% static 'Juegos/Spider-man 2/caratula-ps5.jpg' %}"
+            alt="...">
+          <div class="card-box  description">
+            <h3>PS5</h3>
+            <h3>Marvel's Spider-man 2</h3>
+          </div>
+          <div class="card-box  precio">
+            <h4>$69.000</h4>
+          </div>
+        </a>
+      </div>
+      <div class="card">
+        <a href="{% url 'spiderman' %}">
+          <img src="{% static 'Juegos/Spider-man 2/caratula-ps5.jpg' %}" alt="...">
+          <div class="card-box  description">
+            <h3>PS5</h3>
+            <h3>Marvel's Spider-man 2</h3>
+          </div>
+          <div class="card-box  precio">
+            <h4>$69.000</h4>
+          </div>
+        </a>
+      </div>
+      <div class="card">
+        <a href="{% url 'spiderman' %}">
+          <img src="{% static 'Juegos/Spider-man 2/caratula-ps5.jpg' %}" alt="...">
+          <div class="card-box  description">
+            <h3>PS5</h3>
+            <h3>Marvel's Spider-man 2</h3>
+          </div>
+          <div class="card-box  precio">
+            <h4>$69.000</h4>
+          </div>
+        </a>
+      </div>
+      <div class="card">
+        <a href="{% url 'spiderman' %}">
+          <img src="{% static 'Juegos/Spider-man 2/caratula-ps5.jpg' %}" alt="...">
+          <div class="card-box  description">
+            <h3>PS5</h3>
+            <h3>Marvel's Spider-man 2</h3>
+          </div>
+          <div class="card-box  precio">
+            <h4>$69.000</h4>
+          </div>
+        </a>
+      </div>
+    </div>
+  </article>
+  <article class="contenedor-carrusel">
+    <div class="carrusel">
+      <ul>
+        <li>
+
+          <img src="{% static 'Imagenes/Banner-Nezus.webp' %}" alt="...">
+          <div class="texto-carrusel">
+            <h2>¡ Bienvenido a PlayNexus !</h2>
+            <button>Conócenos.</button>
+          </div>
+        </li>
+        <li>
+          <a href="{% url 'spiderman' %} "><img
+              src="{% static 'Juegos/Spider-man 2/Banner-5.png' %}"
+              alt="..."></a>
+          <div class="texto-carrusel-2">
+            <h3>Marvel's Spider-man 2</h3>
+          </div>
+        </li>
+        <li>
+          <a href><img src="{% static 'Juegos/ForbiddenWest/Banner-1.webp' %}"
+              alt="..."></a>
+          <div class="texto-carrusel-2">
+            <h3>Horizon Forbidden West</h3>
+          </div>
+        </li>
+        <li>
+
+          <a href><img src=" {% static 'Juegos/Redemption 2/Banner-1.webp' %}"
+              alt="..."></a>
+          <div class="texto-carrusel-2">
+            <h3>Red Dead Redemption 2</h3>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="contenedor-about">
+    <div class="about-img">
+
+      <img src="{% static 'Imagenes/descarga.gif' %}" alt>
+    </div>
+    <div class="about-txt">
+      <h3>Hola viajero</h3>
+      <h4>Bienvenido a la mejor tienda de venta de juegos físicos.</h4>
+      <h4>Los títulos más destacados de tus consolas favoritas, los podrás
+        encontrar en <b>PlayNexus</b>.</h4>
+      <h4>Contamos con envíos a todo chile y distintos métodos de pago.</h4>
+      <h4>Síguenos en nuestras redes sociales para no perderte ninguna
+        oferta.</h4>
+    </div>
+  </article>
+</section>
+
+{% endblock %}

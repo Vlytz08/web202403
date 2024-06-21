@@ -1,0 +1,19 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block head %}
+
+<script src="{% static 'main_copia.js' %}"></script>
+<link rel="stylesheet" href="{% static 'user.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<section class="interfaz-user">
+  <form action="" method="post">
+    {% csrf_token %}
+    {{form}}
+    <button type="submit">Ingresar</button>  
+  </form>
+</section>
+{% endblock %}

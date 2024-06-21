@@ -1,0 +1,48 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block head%}
+<script src="{%  static 'api.js' %}"></script>
+<script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+{% endblock %}
+
+{% block content %}
+
+  <section class="interfaz-carro">
+    
+    <article class="carro">
+      <div class="compra-artc">
+        <img src="{% static 'Juegos/Spider-man 2/caratula-ps5.jpg' %}" alt="">
+        <h3> Marvel's Spider-man 2</h3>
+        <h3> PS5</h3>
+        <input type="number"  name="tentacles" min="1" max="10" value="1"/>
+        <h3>$<label for="" >69000</label></h3>
+      </div>
+      <div class="compra-artc">
+        <img src="{% static 'Juegos/Spider-man 2/caratula-ps5.jpg' %}" alt="">
+        <h3> Marvel's Spider-man 2</h3>
+        <h3> PS5</h3>
+        <input type="number" name="tentacles" min="1" max="10" value="1"  />
+        <h3>$<label for="">69000</label></h3>
+
+      </div>
+      
+    </article>
+    <article class="pago">
+      <div>
+      <h3>Total    : $<label for="" id="monto">138000</label></h3>
+      </div>
+      <button><b>Finalizar Compra.</b></button>
+    </article>
+    <article class="tipo-moneda">
+      <select name="favoriteOnly" id="favoriteOnly" onchange="convierte()">
+        <option>CLP</option>
+        <option>US</option>
+      </select>
+    </article>
+  </section>
+
+
+
+{% endblock %}
+

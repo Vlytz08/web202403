@@ -12,10 +12,37 @@
 {% block content %}
 
 <section class="interfaz-user">
-  <form action="" method="post">
-    {% csrf_token %}
-    {{form | crispy }}
-    <button type="submit">Ingresar</button>  
-  </form>
+  <article class="sesion-artcl">
+    <div class="foto-user">
+      <img src="../Imagenes/7he R4.gif" alt="">
+    </div>
+    <form action="{% url 'logearse' %}" method="post" class="box-sesion">
+      {% csrf_token %}
+      <h3>Acceder.</h3>
+      <div class="box-sesion  box-sesion-input">
+        <!-- <label for="">Dirección de email</label> -->
+        <input type="text" placeholder="Correo" name="usuario">
+        <p class="errorUser">Usuario No encontrado</p>
+
+      </div>
+      <div class="box-sesion  box-sesion-input">
+        <!-- <label for="">Contraseña</label> -->
+        <input type="password" id="clave" name="clave" placeholder="Contraseña" required >
+        <p class="errorPasst" >Contraseña incorrecta</p>    
+
+      </div>
+      <div class="box-visible">
+        <input  type="checkbox" id="visible">
+        <label for="visible" class="Mostrar_contra">Mostrar contraseña</label>
+        
+      </div>
+
+      <button class="button-sesion" type="submit">Iniciar</button>
+      <div class="user-preg">
+        <label for=""> ¿No tienes una cuenta?</label>
+        <a href="registro.html">Registrate</a>
+      </div>
+    </form>
+  </article>
 </section>
 {% endblock %}

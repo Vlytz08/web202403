@@ -9,5 +9,7 @@ urlpatterns = [
     path('producto',producto, name="producto"),
     path('soon',soon, name="soon"),
     path('carrito',carrito, name="carrito"),
-    path('login',LoginView.as_view(template_name ='core/user.html'), name="login"),
+    # path('login',LoginView.as_view(template_name ='core/user.html'), name="login"),
+    path('login',iniciar, name="login"),
+    path('logearse',logearse, name="logearse"),
 ]

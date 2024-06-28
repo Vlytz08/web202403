@@ -2,8 +2,7 @@ from django.urls import path
 from .views import *
 from django.contrib.auth.views import LoginView
 urlpatterns = [
-    path('',home, name="home"),
- 
+    path('home',home, name="home"), 
     path('registro',registro, name="registro"),
     path('spiderman',spiderman, name="spiderman"),
     path('producto',producto, name="producto"),
